@@ -1,0 +1,88 @@
+body {
+   display: flex;
+   margin: 0;
+   background: #de00f2;
+   background: linear-gradient(45deg, #de00f2 0%,#00c968 100%);
+   height: 100vh;
+}
+
+.Kuba-wrapper{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+#Kuba-svg{
+   position: relative;
+   width: 250px;
+   height:300px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   overflow: hidden;
+}
+
+
+#stickman-head{
+   position: absolute;
+   top: 2.5%;
+   left: 11%;
+   z-index: 4;
+}
+
+
+#stickman-body{
+   position: absolute;
+   top: 27%;
+   left: 0;
+   z-index: 2;
+}
+
+#stickman-star{
+   position: absolute;
+   z-index: 4;
+   top: 30%;
+   left: 22.5%;
+}
+
+#stickman-cape{
+   position: absolute;
+   z-index: 3;
+   top: 16%;
+   left: 22.5%;
+}
+
+.eyes{
+   position: absolute;
+   top: 9.5%;
+   left: 8%;
+   display: flex;
+   z-index: 10;
+   column-gap: 1px;
+}
+
+.eyes .eye{
+   position: relative;
+   width: 20px;
+   height: 20px;
+   display: block;
+   background: #fff;
+   margin: 0 15px;
+   border-radius: 50%;
+   border: 2px solid black;
+}
+
+.eyes .eye::before{
+   content: '';
+   position: absolute;
+   top: 30%;
+   left: 30%;
+   transform: translate(-50%,-50%);
+   width: 5px;
+   height: 5px;
+   background: black;
+   border-radius: 50%;
+}
